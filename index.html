@@ -294,6 +294,185 @@
                 gap: 1rem;
             }
         }
+
+        /* Graph Styles */
+        .graphs {
+            margin-top: 4rem;
+        }
+
+        .graph-item {
+            margin-bottom: 2.5rem;
+        }
+
+        .graph-title {
+            font-size: 1rem;
+            font-weight: 500;
+            color: #6b7280;
+            margin-bottom: 0.75rem;
+        }
+
+        .graph-container {
+            display: flex;
+            align-items: flex-end;
+            gap: 8px;
+            height: 120px;
+            padding: 12px 0;
+            border-bottom: 2px solid #e5e5e5;
+        }
+
+        .graph-bar {
+            flex: 1;
+            background-color: #1570e8;
+            border-radius: 4px 4px 0 0;
+            min-width: 20px;
+            transition: height 0.3s;
+        }
+
+        .graph-bar:hover {
+            background-color: #0f66d1;
+        }
+
+        .graph-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.5rem;
+            font-size: 0.8rem;
+            color: #6b7280;
+        }
+
+        .graph-value {
+            font-size: 0.75rem;
+            color: #6b7280;
+            text-align: right;
+        }
+
+        .progress-section {
+            margin-top: 4rem;
+        }
+
+        .progress-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .progress-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+        }
+
+        .progress-name {
+            font-size: 0.95rem;
+            color: #292929;
+        }
+
+        .progress-value {
+            font-size: 0.95rem;
+            color: #6b7280;
+        }
+
+        .progress-bar {
+            height: 8px;
+            background-color: #e5e5e5;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background-color: #1570e8;
+            border-radius: 4px;
+            transition: width 0.5s;
+            width: 0;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .stat-card {
+            background-color: #ffffff;
+            border: 1px solid #e5e5e5;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: border-color 0.2s;
+        }
+
+        .stat-card:hover {
+            border-color: #d1d5db;
+        }
+
+        .stat-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #1570e8;
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+
+        .donut-section {
+            margin-top: 4rem;
+        }
+
+        .donut-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .donut {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: conic-gradient(
+                #1570e8 0% 70% 90%,
+                #e5e5e5 90% 100%
+            );
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .donut-center {
+            width: 60px;
+            height: 60px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            color: #6b7280;
+        }
+
+        .donut-legend {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            justify-content: center;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.85rem;
+            color: #6b7280;
+        }
+
+        .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 2px;
+        }
     </style>
 </head>
 <body>
@@ -304,6 +483,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#graphs">Graphs</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -374,6 +554,106 @@
                     <p class="project-description">A real-time chat application with rooms, direct messaging, and file sharing.</p>
                 </div>
                 <a href="#" class="project-link">View project →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="graphs">
+        <h2 class="section-title">Performance Metrics</h2>
+        
+        <div class="graphs">
+            <div class="graph-item">
+                <div class="graph-title">Website Traffic (Monthly Visitors)</div>
+                <div class="graph-container">
+                    <div class="graph-bar" style="height: 85%;"></div>
+                    <div class="graph-bar" style="height: 70%;"></div>
+                    <div class="graph-bar" style="height: 95%;"></div>
+                    <div class="graph-bar" style="height: 60%;"></div>
+                    <div class="graph-bar" style="height: 80%;"></div>
+                    <div class="graph-bar" style="height: 75%;"></div>
+                    <div class="graph-bar" style="height: 90%;"></div>
+                    <div class="graph-bar" style="height: 65%;"></div>
+                    <div class="graph-bar" style="height: 88%;"></div>
+                    <div class="graph-bar" style="height: 55%;"></div>
+                    <div class="graph-bar" style="height: 72%;"></div>
+                    <div class="graph-bar" style="height: 78%;"></div>
+                </div>
+                <div class="graph-labels">
+                    <span>Jan</span><span>Feb</span><span>Mar</span><span>Apr</span><span>May</span><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span><span>Dec</span>
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <h3 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Skill Proficiency</h3>
+                
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-name">JavaScript</span>
+                        <span class="progress-value">95%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 95%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-name">React</span>
+                        <span class="progress-value">90%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 90%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-name">Node.js</span>
+                        <span class="progress-value">85%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 85%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-name">Python</span>
+                        <span class="progress-value">80%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 80%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <span class="progress-name">AWS</span>
+                        <span class="progress-value">75%</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress-fill" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-grid" style="margin-top: 4rem;">
+            <div class="stat-card">
+                <div class="stat-value">1.2K</div>
+                <div class="stat-label">Projects</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">50K+</div>
+                <div class="stat-label">Users</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">99%</div>
+                <div class="stat-label">Uptime</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">2.5M+</div>
+                <div class="stat-label">Downloads</div>
             </div>
         </div>
     </section>

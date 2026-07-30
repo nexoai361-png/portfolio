@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Doe - Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@latest/dist/lucide.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/lucide-static@latest/dist/lucide.min.js"></script>
     <style>
         * {
             margin: 0;
@@ -43,6 +45,14 @@
             font-weight: 600;
             color: #292929;
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo i {
+            width: 20px;
+            height: 20px;
         }
 
         .nav-links {
@@ -107,12 +117,21 @@
             background-color: #0f66d1;
         }
 
-        .section-title {
+.section-title {
             text-align: center;
             font-size: 1.75rem;
             font-weight: 600;
             margin-bottom: 2rem;
             color: #292929;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .section-title i {
+            width: 24px;
+            height: 24px;
         }
 
         .about-content {
@@ -162,6 +181,13 @@
             border-radius: 8px;
             text-align: center;
             transition: background-color 0.2s;
+        }
+
+        .skill-card i {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 0.5rem;
+            color: #1570e8;
         }
 
         .skill-card:hover {
@@ -224,7 +250,14 @@
             text-decoration: none;
             font-size: 0.9rem;
             margin-top: 1rem;
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .project-link i {
+            width: 16px;
+            height: 16px;
         }
 
         .project-link:hover {
@@ -374,6 +407,13 @@
             transition: border-color 0.2s;
         }
 
+        .stat-card i {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 0.5rem;
+            color: #1570e8;
+        }
+
         .stat-card:hover {
             border-color: #d1d5db;
         }
@@ -488,13 +528,13 @@
 <body>
     <header>
         <nav>
-            <a href="#home" class="logo">John Doe</a>
+            <a href="#home" class="logo"><i data-lucide="briefcase"></i> John Doe</a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#graphs">Graphs</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about"><i data-lucide="user" style="width:16px;height:16px;vertical-align:text-bottom;margin-right:4px"></i>About</a></li>
+                <li><a href="#skills"><i data-lucide="wrench" style="width:16px;height:16px;vertical-align:text-bottom;margin-right:4px"></i>Skills</a></li>
+                <li><a href="#projects"><i data-lucide="folder" style="width:16px;height:16px;vertical-align:text-bottom;margin-right:4px"></i>Projects</a></li>
+                <li><a href="#graphs"><i data-lucide="bar-chart-2" style="width:16px;height:16px;vertical-align:text-bottom;margin-right:4px"></i>Graphs</a></li>
+                <li><a href="#contact"><i data-lucide="mail" style="width:16px;height:16px;vertical-align:text-bottom;margin-right:4px"></i>Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -502,11 +542,11 @@
     <section id="home" class="hero">
         <h1>Hello, I'm John Doe.</h1>
         <p>I build products that solve real problems.</p>
-        <a href="#projects" class="cta-button">View my work</a>
+        <a href="#projects" class="cta-button"><i data-lucide="arrow-right" style="width:16px;height:16px;vertical-align:text-bottom;margin-right:4px"></i>View my work</a>
     </section>
 
     <section id="about">
-        <h2 class="section-title">About</h2>
+        <h2 class="section-title"><i data-lucide="user"></i> About</h2>
         <div class="about-content">
             <div class="profile-image">
                 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop&crop=face&auto=format&dpr=2" alt="Profile photo">
@@ -520,31 +560,37 @@
     </section>
 
     <section id="skills">
-        <h2 class="section-title">Skills</h2>
+        <h2 class="section-title"><i data-lucide="wrench"></i> Skills</h2>
         <div class="skills">
             <div class="skill-card">
+                <i data-lucide="atom"></i>
                 <span class="skill-name">React</span>
             </div>
             <div class="skill-card">
+                <i data-lucide="file-code-2"></i>
                 <span class="skill-name">TypeScript</span>
             </div>
             <div class="skill-card">
+                <i data-lucide="server"></i>
                 <span class="skill-name">Node.js</span>
             </div>
             <div class="skill-card">
+                <i data-lucide="terminal"></i>
                 <span class="skill-name">Python</span>
             </div>
             <div class="skill-card">
+                <i data-lucide="database"></i>
                 <span class="skill-name">PostgreSQL</span>
             </div>
             <div class="skill-card">
+                <i data-lucide="cloud"></i>
                 <span class="skill-name">AWS</span>
             </div>
         </div>
     </section>
 
     <section id="projects" class="projects">
-        <h2 class="section-title">Projects</h2>
+        <h2 class="section-title"><i data-lucide="folder"></i> Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
                 <img src="https://images.unsplash.com/photo-1551434679-e291a14d0f62?w=600&h=400&fit=crop&auto=format&dpr=2" alt="E-Commerce Project" class="project-image">
@@ -552,7 +598,7 @@
                     <h3 class="project-title">E-Commerce Platform</h3>
                     <p class="project-description">A complete e-commerce solution with payment processing and inventory management.</p>
                 </div>
-                <a href="#" class="project-link">View project →</a>
+                <a href="#" class="project-link"><i data-lucide="external-link"></i>View project</a>
             </div>
             <div class="project-card">
                 <img src="https://images.unsplash.com/photo-1460925895994-f527c769e2a8?w=600&h=400&fit=crop&auto=format&dpr=2" alt="Dashboard Project" class="project-image">
@@ -560,7 +606,7 @@
                     <h3 class="project-title">Analytics Dashboard</h3>
                     <p class="project-description">Real-time data visualization and reporting tools for business insights.</p>
                 </div>
-                <a href="#" class="project-link">View project →</a>
+                <a href="#" class="project-link"><i data-lucide="external-link"></i>View project</a>
             </div>
             <div class="project-card">
                 <img src="https://images.unsplash.com/photo-1551434679-e291a14d0f62?w=600&h=400&fit=crop&auto=format&dpr=2" alt="Chat App Project" class="project-image">
@@ -568,17 +614,17 @@
                     <h3 class="project-title">Chat App</h3>
                     <p class="project-description">A real-time chat application with rooms, direct messaging, and file sharing.</p>
                 </div>
-                <a href="#" class="project-link">View project →</a>
+                <a href="#" class="project-link"><i data-lucide="external-link"></i>View project</a>
             </div>
         </div>
     </section>
 
     <section id="graphs">
-        <h2 class="section-title">Performance Metrics</h2>
+        <h2 class="section-title"><i data-lucide="bar-chart-2"></i> Performance Metrics</h2>
         
         <div class="graphs">
             <div class="graph-item">
-                <div class="graph-title">Website Traffic (Monthly Visitors)</div>
+                <div class="graph-title"><i data-lucide="trending-up" style="width:16px;height:16px;vertical-align:text-bottom;margin-right:4px"></i>Website Traffic (Monthly Visitors)</div>
                 <div class="graph-container">
                     <div class="graph-bar" style="height: 85%;"></div>
                     <div class="graph-bar" style="height: 70%;"></div>
@@ -599,7 +645,7 @@
             </div>
 
             <div class="progress-section">
-                <h3 style="margin-bottom: 1.5rem; font-size: 1.25rem;">Skill Proficiency</h3>
+                <h3 style="margin-bottom: 1.5rem; font-size: 1.25rem;"><i data-lucide="gauge" style="width:18px;height:18px;vertical-align:text-bottom;margin-right:4px"></i>Skill Proficiency</h3>
                 
                 <div class="progress-item">
                     <div class="progress-header">
@@ -655,18 +701,22 @@
 
         <div class="stats-grid" style="margin-top: 4rem;">
             <div class="stat-card">
+                <i data-lucide="briefcase"></i>
                 <div class="stat-value">1.2K</div>
                 <div class="stat-label">Projects</div>
             </div>
             <div class="stat-card">
+                <i data-lucide="users"></i>
                 <div class="stat-value">50K+</div>
                 <div class="stat-label">Users</div>
             </div>
             <div class="stat-card">
+                <i data-lucide="activity"></i>
                 <div class="stat-value">99%</div>
                 <div class="stat-label">Uptime</div>
             </div>
             <div class="stat-card">
+                <i data-lucide="download"></i>
                 <div class="stat-value">2.5M+</div>
                 <div class="stat-label">Downloads</div>
             </div>
@@ -674,13 +724,13 @@
     </section>
 
     <section id="contact" class="contact">
-        <h2 class="section-title">Contact</h2>
+        <h2 class="section-title"><i data-lucide="mail"></i> Contact</h2>
         <div class="contact-content">
             <p>Let's build something together.</p>
             <div class="contact-links">
-                <a href="mailto:john@example.com">Email</a>
-                <a href="https://github.com" target="_blank">GitHub</a>
-                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+                <a href="mailto:john@example.com"><i data-lucide="mail" style="width:16px;height:16px;vertical-align:text-bottom;margin-right:4px"></i>Email</a>
+                <a href="https://github.com" target="_blank"><i data-lucide="github" style="width:16px;height:16px;vertical-align:text-bottom;margin-right:4px"></i>GitHub</a>
+                <a href="https://linkedin.com" target="_blank"><i data-lucide="linkedin" style="width:16px;height:16px;vertical-align:text-bottom;margin-right:4px"></i>LinkedIn</a>
             </div>
         </div>
     </section>
@@ -690,6 +740,8 @@
     </footer>
 
     <script>
+        lucide.createIcons();
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();

@@ -127,12 +127,15 @@
             max-width: 300px;
             aspect-ratio: 1;
             border-radius: 12px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #ffffff;
-            font-size: 2rem;
+            background: #f5f5f5;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .about-text h3 {
@@ -187,6 +190,18 @@
             overflow: hidden;
             border: 1px solid #e5e5e5;
             transition: border-color 0.2s;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .project-header {
+            padding: 1.25rem 1.5rem 1rem;
         }
 
         .project-card:hover {
@@ -498,7 +513,9 @@
     <section id="about">
         <h2 class="section-title">About</h2>
         <div class="about-content">
-            <div class="profile-image">JD</div>
+            <div class="profile-image">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop&crop=face&auto=format&dpr=2" alt="Profile photo">
+            </div>
             <div class="about-text">
                 <h3>I build things that work.</h3>
                 <p>I'm a full-stack developer with 5+ years of experience building web applications. I focus on clean, efficient code and user-centered design.</p>
@@ -535,6 +552,7 @@
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1551434679-e291a14d0f62?w=600&h=400&fit=crop&auto=format&dpr=2" alt="E-Commerce Project" class="project-image">
                 <div class="project-header">
                     <h3 class="project-title">E-Commerce Platform</h3>
                     <p class="project-description">A complete e-commerce solution with payment processing and inventory management.</p>
@@ -542,6 +560,7 @@
                 <a href="#" class="project-link">View project →</a>
             </div>
             <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1460925895994-f527c769e2a8?w=600&h=400&fit=crop&auto=format&dpr=2" alt="Dashboard Project" class="project-image">
                 <div class="project-header">
                     <h3 class="project-title">Analytics Dashboard</h3>
                     <p class="project-description">Real-time data visualization and reporting tools for business insights.</p>
@@ -549,6 +568,7 @@
                 <a href="#" class="project-link">View project →</a>
             </div>
             <div class="project-card">
+                <img src="https://images.unsplash.com/photo-1551434679-e291a14d0f62?w=600&h=400&fit=crop&auto=format&dpr=2" alt="Chat App Project" class="project-image">
                 <div class="project-header">
                     <h3 class="project-title">Chat App</h3>
                     <p class="project-description">A real-time chat application with rooms, direct messaging, and file sharing.</p>

@@ -16,8 +16,8 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
             line-height: 1.6;
-            color: #292929;
-            background-color: #ffffff;
+            color: #d4d4d4;
+            background-color: #1e1e1e;
         }
 
         header {
@@ -25,8 +25,8 @@
             width: 100%;
             top: 0;
             backdrop-filter: blur(12px);
-            background-color: rgba(255, 255, 255, 0.8);
-            border-bottom: 1px solid #e5e5e5;
+            background-color: rgba(30, 30, 30, 0.9);
+            border-bottom: 1px solid #3a3a3a;
             z-index: 1000;
             transition: all 0.3s ease;
         }
@@ -43,7 +43,7 @@
         .logo {
             font-size: 1.25rem;
             font-weight: 600;
-            color: #292929;
+            color: #d4d4d4;
             text-decoration: none;
             display: flex;
             align-items: center;
@@ -53,6 +53,7 @@
         .logo i {
             width: 20px;
             height: 20px;
+            color: #569cd6;
         }
 
         .nav-links {
@@ -62,14 +63,14 @@
         }
 
         .nav-links a {
-            color: #292929;
+            color: #d4d4d4;
             text-decoration: none;
             font-size: 0.95rem;
             transition: color 0.2s;
         }
 
         .nav-links a:hover {
-            color: #1570e8;
+            color: #569cd6;
         }
 
         section {
@@ -92,8 +93,215 @@
             font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 1rem;
-            color: #292929;
+            color: #d4d4d4;
             line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #6a9955;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #569cd6;
+            color: #ffffff;
+            padding: 10px 24px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background-color 0.2s;
+        }
+
+        .cta-button:hover {
+            background-color: #4ec9b0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            color: #d4d4d4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .section-title i {
+            width: 24px;
+            height: 24px;
+            color: #569cd6;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .profile-image {
+            width: 100%;
+            max-width: 300px;
+            aspect-ratio: 1;
+            border-radius: 12px;
+            background: #3a3a3a;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-text h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #d4d4d4;
+        }
+
+        .about-text p {
+            color: #b5cea8;
+            margin-bottom: 1rem;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .skill-card {
+            background-color: #252526;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: background-color 0.2s;
+            border: 1px solid #3a3a3a;
+        }
+
+        .skill-card i {
+            width: 24px;
+            height: 24px;
+            margin-bottom: 0.5rem;
+            color: #569cd6;
+        }
+
+        .skill-card:hover {
+            background-color: #2d2d30;
+        }
+
+        .skill-name {
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #d4d4d4;
+        }
+
+        .projects {
+            background-color: #252526;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #3a3a3a;
+            transition: border-color 0.2s;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-header {
+            padding: 1.25rem 1.5rem 1rem;
+        }
+
+        .project-card:hover {
+            border-color: #569cd6;
+        }
+
+        .project-title {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: #d4d4d4;
+        }
+
+        .project-description {
+            color: #b5cea8;
+            font-size: 0.9rem;
+        }
+
+        .project-link {
+            color: #569cd6;
+            text-decoration: none;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .project-link i {
+            width: 16px;
+            height: 16px;
+            color: #569cd6;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .contact {
+            background-color: #1e1e1e;
+        }
+
+        .contact-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-content p {
+            color: #b5cea8;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-link {
+            color: #569cd6;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .contact-link:hover {
+            color: #4ec9b0;
+        }
+
+        footer {
+            background-color: #252526;
+            color: #6a9955;
+            text-align: center;
+            padding: 2rem 20px;
+            border-top: 1px solid #3a3a3a;
+            font-size: 0.9rem;
         }
 
         .hero p {
@@ -312,7 +520,7 @@
         .graph-title {
             font-size: 1rem;
             font-weight: 500;
-            color: #6b7280;
+            color: #b5cea8;
             margin-bottom: 0.75rem;
         }
 
@@ -322,19 +530,19 @@
             gap: 8px;
             height: 120px;
             padding: 12px 0;
-            border-bottom: 2px solid #e5e5e5;
+            border-bottom: 2px solid #3a3a3a;
         }
 
         .graph-bar {
             flex: 1;
-            background-color: #1570e8;
+            background-color: #569cd6;
             border-radius: 4px 4px 0 0;
             min-width: 20px;
             transition: height 0.3s;
         }
 
         .graph-bar:hover {
-            background-color: #0f66d1;
+            background-color: #4ec9b0;
         }
 
         .graph-labels {
@@ -342,7 +550,7 @@
             justify-content: space-between;
             margin-top: 0.5rem;
             font-size: 0.8rem;
-            color: #6b7280;
+            color: #6a9955;
         }
 
         .progress-section {
@@ -361,24 +569,24 @@
 
         .progress-name {
             font-size: 0.95rem;
-            color: #292929;
+            color: #d4d4d4;
         }
 
         .progress-value {
             font-size: 0.95rem;
-            color: #6b7280;
+            color: #b5cea8;
         }
 
         .progress-bar {
             height: 8px;
-            background-color: #e5e5e5;
+            background-color: #3a3a3a;
             border-radius: 4px;
             overflow: hidden;
         }
 
         .progress-fill {
             height: 100%;
-            background-color: #1570e8;
+            background-color: #569cd6;
             border-radius: 4px;
             transition: width 0.5s;
             width: 0;
@@ -392,8 +600,8 @@
         }
 
         .stat-card {
-            background-color: #ffffff;
-            border: 1px solid #e5e5e5;
+            background-color: #1e1e1e;
+            border: 1px solid #3a3a3a;
             border-radius: 8px;
             padding: 1.5rem;
             text-align: center;
@@ -404,23 +612,23 @@
             width: 24px;
             height: 24px;
             margin-bottom: 0.5rem;
-            color: #1570e8;
+            color: #569cd6;
         }
 
         .stat-card:hover {
-            border-color: #d1d5db;
+            border-color: #569cd6;
         }
 
         .stat-value {
             font-size: 2rem;
             font-weight: 700;
-            color: #1570e8;
+            color: #569cd6;
             margin-bottom: 0.5rem;
         }
 
         .stat-label {
             font-size: 0.85rem;
-            color: #6b7280;
+            color: #b5cea8;
         }
 
         /* Mobile-First Responsive Design */
@@ -751,9 +959,9 @@
         window.addEventListener('scroll', () => {
             const header = document.querySelector('header');
             if (window.scrollY > 50) {
-                header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                header.style.backgroundColor = 'rgba(30, 30, 30, 0.95)';
             } else {
-                header.style.backgroundColor = 'rgba(255, 255, 255, 0.8)';
+                header.style.backgroundColor = 'rgba(30, 30, 30, 0.9)';
             }
         });
     </script>

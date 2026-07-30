@@ -193,6 +193,10 @@
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
         }
 
+        .project-card:hover {
+            border-color: #d1d5db;
+        }
+
         .project-image {
             width: 100%;
             height: 180px;
@@ -202,14 +206,6 @@
 
         .project-header {
             padding: 1.25rem 1.5rem 1rem;
-        }
-
-        .project-card:hover {
-            border-color: #d1d5db;
-        }
-
-        .project-header {
-            padding: 1.5rem;
         }
 
         .project-title {
@@ -278,38 +274,6 @@
             font-size: 0.9rem;
         }
 
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 1.75rem;
-            }
-
-            .nav-links {
-                gap: 1rem;
-            }
-
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-
-            .profile-image {
-                max-width: 250px;
-            }
-
-            .section-title {
-                font-size: 1.5rem;
-            }
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        @media (max-width: 480px) {
-            .contact-links {
-                gap: 1rem;
-            }
-        }
-
         /* Graph Styles */
         .graphs {
             margin-top: 4rem;
@@ -353,12 +317,6 @@
             margin-top: 0.5rem;
             font-size: 0.8rem;
             color: #6b7280;
-        }
-
-        .graph-value {
-            font-size: 0.75rem;
-            color: #6b7280;
-            text-align: right;
         }
 
         .progress-section {
@@ -432,61 +390,98 @@
             color: #6b7280;
         }
 
-        .donut-section {
-            margin-top: 4rem;
+        /* Mobile-First Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .hero {
+                padding: 100px 20px 60px;
+            }
+
+            .nav-links {
+                gap: 1rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-image {
+                max-width: 250px;
+            }
+
+            .section-title {
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            section {
+                padding: 60px 20px 30px;
+            }
+
+            .skill-card {
+                padding: 1rem;
+            }
+
+            .skill-name {
+                font-size: 0.85rem;
+            }
+
+            .stat-value {
+                font-size: 1.75rem;
+            }
+
+            .contact-links {
+                gap: 1rem;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-link {
+                width: 100%;
+                max-width: 250px;
+                text-align: center;
+            }
         }
 
-        .donut-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.5rem;
+            }
+
+            .hero {
+                padding: 80px 15px 50px;
+            }
+
+            .projects-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .graph-container {
+                height: 100px;
+            }
+
+            .graph-bar {
+                min-width: 12px;
+            }
+
+            .graph-labels {
+                font-size: 0.7rem;
+            }
+
+            .stat-value {
+                font-size: 1.5rem;
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
         }
 
-        .donut {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            background: conic-gradient(
-                #1570e8 0% 70% 90%,
-                #e5e5e5 90% 100%
-            );
-            position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .donut-center {
-            width: 60px;
-            height: 60px;
-            background-color: #ffffff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.75rem;
-            color: #6b7280;
-        }
-
-        .donut-legend {
-            display: flex;
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-            justify-content: center;
-        }
-
-        .legend-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-size: 0.85rem;
-            color: #6b7280;
-        }
-
-        .legend-color {
-            width: 12px;
-            height: 12px;
-            border-radius: 2px;
+        html {
+            scroll-behavior: smooth;
         }
     </style>
 </head>

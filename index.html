@@ -5,7 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>John Doe - Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Symbols+Rounded" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#569cd6',
+                        secondary: '#6a9955',
+                        dark: '#1e1e1e',
+                        dark-secondary: '#252526',
+                        dark-border: '#3a3a3a',
+                    }
+                }
+            }
+        }
+    </script>
     <style>
         * {
             margin: 0;
@@ -50,204 +67,49 @@
             gap: 0.5rem;
         }
 
-        .logo i {
+.logo .material-symbols {
             font-size: 20px;
         }
 
-        .nav-links a i {
+        .nav-links a .material-symbols {
             font-size: 16px;
             margin-right: 4px;
         }
 
-        .nav-links {
-            display: flex;
-            list-style: none;
-            gap: 2rem;
-        }
-
-        .nav-links a {
-            color: #d4d4d4;
-            text-decoration: none;
-            font-size: 0.95rem;
-            transition: color 0.2s, transform 0.2s;
-        }
-
-        .nav-links a:hover {
-            color: #569cd6;
-            transform: translateY(-2px);
-        }
-
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 120px 20px 80px;
-        }
-
-        .hero h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: #d4d4d4;
-            line-height: 1.2;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: #6a9955;
-            margin-bottom: 2rem;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: #569cd6;
-            color: #ffffff;
-            padding: 10px 24px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: 500;
-            transition: background-color 0.2s;
-        }
-
-        .cta-button:hover {
-            background-color: #4ec9b0;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 1.75rem;
-            font-weight: 600;
-            margin-bottom: 2rem;
-            color: #d4d4d4;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-        }
-
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 2fr;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        .profile-image {
-            width: 100%;
-            max-width: 300px;
-            aspect-ratio: 1;
-            border-radius: 12px;
-            background: #3a3a3a;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-        }
-
-        .profile-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-        .about-text h3 {
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            color: #d4d4d4;
-        }
-
-        .about-text p {
-            color: #b5cea8;
-            margin-bottom: 1rem;
-        }
-
-        .skills {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .skill-card {
-            background-color: #252526;
-            padding: 1.5rem;
-            border-radius: 8px;
-            text-align: center;
-            transition: background-color 0.2s;
-            border: 1px solid #3a3a3a;
-        }
-
-        .skill-card:hover {
-            background-color: #2d2d30;
-        }
-
-        .skill-name {
-            font-size: 0.95rem;
-            font-weight: 500;
-            color: #d4d4d4;
-        }
-
-        .projects {
-            background-color: #252526;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .project-card {
+        .cta-button .material-symbols {
             font-size: 16px;
             margin-right: 4px;
         }
 
-        .section-title i {
+        .section-title .material-symbols {
             font-size: 24px;
         }
 
-        .skill-card i {
+        .skill-card .material-symbols {
             font-size: 24px;
             margin-bottom: 0.5rem;
             color: #569cd6;
-            transition: transform 0.3s ease;
         }
 
-        .skill-card:hover i {
-            transform: scale(1.1);
-        }
-
-        .project-link i {
+        .project-link .material-symbols {
             font-size: 16px;
-            transition: transform 0.2s ease;
         }
 
-        .project-link:hover i {
-            transform: translateX(4px);
-        }
-
-        .graph-title i {
+        .graph-title .material-symbols {
             font-size: 16px;
             margin-right: 4px;
         }
 
-        .stat-card i {
+        .stat-card .material-symbols {
             font-size: 24px;
             margin-bottom: 0.5rem;
             color: #569cd6;
-            transition: transform 0.3s ease;
         }
 
-        .stat-card:hover i {
-            transform: scale(1.1);
+        .contact-link .material-symbols {
+            font-size: 16px;
+            margin-right: 4px;
         }
-
-        .stat-card:hover {
-            border-color: #569cd6;
-        }
-
-        .stat-value {
             font-size: 2rem;
             font-weight: 700;
             color: #569cd6;
@@ -484,13 +346,13 @@
 <body>
     <header>
         <nav>
-            <a href="#home" class="logo"><i class="ph ph-briefcase"></i> John Doe</a>
+            <a href="#home" class="logo"><span class="material-symbols rounded">work</span> John Doe</a>
             <ul class="nav-links">
-                <li><a href="#about"><i class="ph ph-user"></i> About</a></li>
-                <li><a href="#skills"><i class="ph ph-wrench"></i> Skills</a></li>
-                <li><a href="#projects"><i class="ph ph-folder"></i> Projects</a></li>
-                <li><a href="#graphs"><i class="ph ph-chart-line"></i> Graphs</a></li>
-                <li><a href="#contact"><i class="ph ph-envelope"></i> Contact</a></li>
+                <li><a href="#about"><span class="material-symbols rounded">person</span> About</a></li>
+                <li><a href="#skills"><span class="material-symbols rounded">settings</span> Skills</a></li>
+                <li><a href="#projects"><span class="material-symbols rounded">folder</span> Projects</a></li>
+                <li><a href="#graphs"><span class="material-symbols rounded">insights</span> Graphs</a></li>
+                <li><a href="#contact"><span class="material-symbols rounded">mail</span> Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -498,11 +360,11 @@
     <section id="home" class="hero">
         <h1>Hello, I'm John Doe.</h1>
         <p>I build products that solve real problems.</p>
-        <a href="#projects" class="cta-button"><i class="ph ph-arrow-right"></i>View my work</a>
+        <a href="#projects" class="cta-button"><span class="material-symbols rounded">arrow_forward</span>View my work</a>
     </section>
 
     <section id="about">
-        <h2 class="section-title"><i class="ph ph-user"></i> About</h2>
+        <h2 class="section-title"><span class="material-symbols rounded">person</span> About</h2>
         <div class="about-content">
             <div class="profile-image">
                 <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop&crop=face&auto=format&dpr=2" alt="Profile photo">
@@ -516,37 +378,37 @@
     </section>
 
     <section id="skills">
-        <h2 class="section-title"><i class="ph ph-wrench"></i> Skills</h2>
+        <h2 class="section-title"><span class="material-symbols rounded">settings</span> Skills</h2>
         <div class="skills">
             <div class="skill-card">
-                <i class="ph ph-atom"></i>
+                <span class="material-symbols rounded">code</span>
                 <span class="skill-name">React</span>
             </div>
             <div class="skill-card">
-                <i class="ph ph-code"></i>
+                <span class="material-symbols rounded">code</span>
                 <span class="skill-name">TypeScript</span>
             </div>
             <div class="skill-card">
-                <i class="ph ph-server"></i>
+                <span class="material-symbols rounded">developer_board</span>
                 <span class="skill-name">Node.js</span>
             </div>
             <div class="skill-card">
-                <i class="ph ph-terminal"></i>
+                <span class="material-symbols rounded">terminal</span>
                 <span class="skill-name">Python</span>
             </div>
             <div class="skill-card">
-                <i class="ph ph-database"></i>
+                <span class="material-symbols rounded">database</span>
                 <span class="skill-name">PostgreSQL</span>
             </div>
             <div class="skill-card">
-                <i class="ph ph-cloud"></i>
+                <span class="material-symbols rounded">cloud</span>
                 <span class="skill-name">AWS</span>
             </div>
         </div>
     </section>
 
     <section id="projects" class="projects">
-        <h2 class="section-title"><i class="ph ph-folder"></i> Projects</h2>
+        <h2 class="section-title"><span class="material-symbols rounded">folder</span> Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
                 <img src="https://images.unsplash.com/photo-1551434679-e291a14d0f62?w=600&h=400&fit=crop&auto=format&dpr=2" alt="E-Commerce Project" class="project-image">
@@ -554,7 +416,7 @@
                     <h3 class="project-title">E-Commerce Platform</h3>
                     <p class="project-description">A complete e-commerce solution with payment processing and inventory management.</p>
                 </div>
-                <a href="#" class="project-link"><i class="ph ph-link-simple"></i>View project</a>
+                <a href="#" class="project-link"><span class="material-symbols rounded">link</span>View project</a>
             </div>
             <div class="project-card">
                 <img src="https://images.unsplash.com/photo-1460925895994-f527c769e2a8?w=600&h=400&fit=crop&auto=format&dpr=2" alt="Dashboard Project" class="project-image">
@@ -562,7 +424,7 @@
                     <h3 class="project-title">Analytics Dashboard</h3>
                     <p class="project-description">Real-time data visualization and reporting tools for business insights.</p>
                 </div>
-                <a href="#" class="project-link"><i class="ph ph-link-simple"></i>View project</a>
+                <a href="#" class="project-link"><span class="material-symbols rounded">link</span>View project</a>
             </div>
             <div class="project-card">
                 <img src="https://images.unsplash.com/photo-1551434679-e291a14d0f62?w=600&h=400&fit=crop&auto=format&dpr=2" alt="Chat App Project" class="project-image">
@@ -570,17 +432,17 @@
                     <h3 class="project-title">Chat App</h3>
                     <p class="project-description">A real-time chat application with rooms, direct messaging, and file sharing.</p>
                 </div>
-                <a href="#" class="project-link"><i class="ph ph-link-simple"></i>View project</a>
+                <a href="#" class="project-link"><span class="material-symbols rounded">link</span>View project</a>
             </div>
         </div>
     </section>
 
     <section id="graphs">
-        <h2 class="section-title"><i class="ph ph-chart-bar"></i> Performance Metrics</h2>
+        <h2 class="section-title"><span class="material-symbols rounded">bar_chart</span> Performance Metrics</h2>
         
         <div class="graphs">
             <div class="graph-item">
-                <div class="graph-title"><i class="ph ph-trending-up"></i>Website Traffic (Monthly Visitors)</div>
+                <div class="graph-title"><span class="material-symbols rounded">trending_up</span>Website Traffic (Monthly Visitors)</div>
                 <div class="graph-container">
                     <div class="graph-bar" style="height: 85%;"></div>
                     <div class="graph-bar" style="height: 70%;"></div>
@@ -601,7 +463,7 @@
             </div>
 
             <div class="progress-section">
-                <h3 style="margin-bottom: 1.5rem; font-size: 1.25rem;"><i class="ph ph-gauge"></i>Skill Proficiency</h3>
+                <h3 style="margin-bottom: 1.5rem; font-size: 1.25rem;"><span class="material-symbols rounded">show_chart</span>Skill Proficiency</h3>
                 
                 <div class="progress-item">
                     <div class="progress-header">
@@ -657,22 +519,22 @@
 
         <div class="stats-grid" style="margin-top: 4rem;">
             <div class="stat-card">
-                <i class="ph ph-briefcase"></i>
+                <span class="material-symbols rounded">work</span>
                 <div class="stat-value">1.2K</div>
                 <div class="stat-label">Projects</div>
             </div>
             <div class="stat-card">
-                <i class="ph ph-users"></i>
+                <span class="material-symbols rounded">people</span>
                 <div class="stat-value">50K+</div>
                 <div class="stat-label">Users</div>
             </div>
             <div class="stat-card">
-                <i class="ph ph-activity"></i>
+                <span class="material-symbols rounded">activity</span>
                 <div class="stat-value">99%</div>
                 <div class="stat-label">Uptime</div>
             </div>
             <div class="stat-card">
-                <i class="ph ph-download-simple"></i>
+                <span class="material-symbols rounded">download</span>
                 <div class="stat-value">2.5M+</div>
                 <div class="stat-label">Downloads</div>
             </div>
@@ -680,13 +542,13 @@
     </section>
 
     <section id="contact" class="contact">
-        <h2 class="section-title"><i class="ph ph-envelope"></i> Contact</h2>
+        <h2 class="section-title"><span class="material-symbols rounded">mail</span> Contact</h2>
         <div class="contact-content">
             <p>Let's build something together.</p>
             <div class="contact-links">
-                <a href="mailto:john@example.com"><i class="ph ph-envelope"></i>Email</a>
-                <a href="https://github.com" target="_blank"><i class="ph ph-github-logo"></i>GitHub</a>
-                <a href="https://linkedin.com" target="_blank"><i class="ph ph-linkedin-logo"></i>LinkedIn</a>
+                <a href="mailto:john@example.com"><span class="material-symbols rounded">mail</span>Email</a>
+                <a href="https://github.com" target="_blank"><span class="material-symbols rounded">github</span>GitHub</a>
+                <a href="https://linkedin.com" target="_blank"><span class="material-symbols rounded">linkedin</span>LinkedIn</a>
             </div>
         </div>
     </section>

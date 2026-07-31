@@ -1,11 +1,12 @@
 # Portfolio Website
 
-A modern, responsive portfolio website built with HTML, CSS, and Phosphor icons.
+A modern, responsive portfolio website built with HTML, CSS, Tailwind CSS, and Material Symbols icons.
 
 ## Features
 
 - **VS Code Dark+ Theme**: Dark mode styling with VS Code-inspired colors
-- **Phosphor Icons**: Clean, consistent iconography using Phosphor Icons
+- **Material Symbols Icons**: Clean, consistent iconography using Material Symbols Rounded
+- **Tailwind CSS**: Utility-first CSS framework for rapid styling
 - **Cabin Font**: Modern typography with system font fallbacks
 - **SVG Smooth Animations**: Smooth entrance animations for all elements
 - **Responsive Design**: Mobile-first layout with adaptive breakpoints
@@ -16,7 +17,8 @@ A modern, responsive portfolio website built with HTML, CSS, and Phosphor icons.
 
 - HTML5
 - CSS3 (with custom properties, flexbox, grid)
-- Phosphor Icons (via CDN)
+- Tailwind CSS (via CDN)
+- Material Symbols Rounded (via Google Fonts)
 - Google Fonts (Cabin)
 
 ## Sections
